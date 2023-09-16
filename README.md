@@ -15,33 +15,32 @@ This script performs subdomain enumeration using various tools such as `findomai
 
 Before using the script, you need to set up the required environment, which includes installing the necessary dependencies. Run the following command to set up the environment:
 
-```shell
+ **Environment Setup:** Before using the script, ensure you have the required dependencies installed on your system. You can set up the environment with a single command:
 
-go run subdomain_scanner.go -s
+```go run subdomain_scanner.go -s
 ```
-This command will install the required tools (findomain, amass, subfinder, rusolver) if they are not already installed on your system. Make sure to have Go (Golang) installed on your system to run this script.
+This command will install the necessary tools (findomain, amass, subfinder, rusolver) if they are not already present on your system. Make sure you have Go (Golang) installed to run this script.
+## Usage
 
-Usage
-To perform subdomain enumeration, you can use the following command:
+To utilize this script for subdomain enumeration, follow these steps:
 
-go run subdomain_scanner.go -p <number of jobs> -f <input file> -t <number of threads> -r <custom resolvers file> -o <output file> -e
-Replace the command-line arguments as follows:
-
--p: Number of parallel jobs to run.
--f: Path to a file containing a list of hosts to scan.
--t: Number of threads to use for the resolver.
--r: Path to a custom resolvers file (optional).
--o: Output file name.
--e: Use external subdomains (optional).
-For more details on command-line options, you can use the -h flag:
-
-shell
-Copy code
-go run subdomain_scanner.go -h
-Example
+### Perform Subdomain Enumeration
+Execute the script with the following command, customizing the command-line arguments as needed:
+```go run subdomain_scanner.go -p <number of jobs> -f <input file> -t <number of threads> -r <custom resolvers file> -o <output file> -e
+```
+#### Replace the command-line arguments as follows:
+`-p`: Number of parallel jobs to run.
+`-f`: Path to a file containing a list of hosts to scan.
+`-t`: Number of threads to use for the resolver.
+`-r`: Path to a custom resolvers file (optional).
+`-o`: Output file name.
+`-e`: Use external subdomains (optional).
+### Additional Options
+For more details on available command-line options, you can use the `-h` flag:
+```go run subdomain_scanner.go -h
+```
+### Example
 Here's an example command for subdomain enumeration:
-
-shell
-Copy code
-go run subdomain_scanner.go -p 10 -f targets.txt -t 4 -o subdomains.txt -e
-This command will perform subdomain enumeration using 10 parallel jobs, a custom resolvers file (if provided), and save the results in the subdomains.txt file. External subdomains will be included in the enumeration.
+```go run subdomain_scanner.go -p 10 -f targets.txt -t 4 -o subdomains.txt -e
+```
+This command performs subdomain enumeration with 10 parallel jobs, utilizes a custom resolvers file (if provided), and saves the results in the subdomains.txt file. External subdomains will be included in the enumeration.
