@@ -22,6 +22,7 @@ go run subdomain_scanner.go -s
 ```
 This command will install the necessary tools (findomain, amass, subfinder, rusolver) if they are not already present on your system. Make sure you have Go (Golang) installed to run this script.
 ## Usage
+![image](https://github.com/M4fiaB0y/fas/assets/95071636/3ac6199f-07a4-4f44-af9c-a51bb7255fad)
 
 To utilize this script for subdomain enumeration, follow these steps:
 
