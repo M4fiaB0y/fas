@@ -16,8 +16,9 @@ This script performs subdomain enumeration using various tools such as `findomai
 Before using the script, you need to set up the required environment, which includes installing the necessary dependencies. Run the following command to set up the environment:
 
 ```shell
-```
+
 go run subdomain_scanner.go -s
+```
 This command will install the required tools (findomain, amass, subfinder, rusolver) if they are not already installed on your system. Make sure to have Go (Golang) installed on your system to run this script.
 
 Usage
