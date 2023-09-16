@@ -17,7 +17,8 @@ Before using the script, you need to set up the required environment, which incl
 
  **Environment Setup:** Before using the script, ensure you have the required dependencies installed on your system. You can set up the environment with a single command:
 
-```go run subdomain_scanner.go -s
+```
+go run subdomain_scanner.go -s
 ```
 This command will install the necessary tools (findomain, amass, subfinder, rusolver) if they are not already present on your system. Make sure you have Go (Golang) installed to run this script.
 ## Usage
@@ -26,7 +27,8 @@ To utilize this script for subdomain enumeration, follow these steps:
 
 ### Perform Subdomain Enumeration
 Execute the script with the following command, customizing the command-line arguments as needed:
-```go run subdomain_scanner.go -p <number of jobs> -f <input file> -t <number of threads> -r <custom resolvers file> -o <output file> -e
+```
+go run subdomain_scanner.go -p <number of jobs> -f <input file> -t <number of threads> -r <custom resolvers file> -o <output file> -e
 ```
 #### Replace the command-line arguments as follows:
 `-p`: Number of parallel jobs to run.
@@ -37,10 +39,12 @@ Execute the script with the following command, customizing the command-line argu
 `-e`: Use external subdomains (optional).
 ### Additional Options
 For more details on available command-line options, you can use the `-h` flag:
-```go run subdomain_scanner.go -h
+```
+go run subdomain_scanner.go -h
 ```
 ### Example
 Here's an example command for subdomain enumeration:
-```go run subdomain_scanner.go -p 10 -f targets.txt -t 4 -o subdomains.txt -e
+```
+go run subdomain_scanner.go -p 10 -f targets.txt -t 4 -o subdomains.txt -e
 ```
 This command performs subdomain enumeration with 10 parallel jobs, utilizes a custom resolvers file (if provided), and saves the results in the subdomains.txt file. External subdomains will be included in the enumeration.
