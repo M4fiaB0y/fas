@@ -49,3 +49,8 @@ Here's an example command for subdomain enumeration:
 go run subdomain_scanner.go -p 10 -f targets.txt -t 4 -o subdomains.txt -e
 ```
 This command performs subdomain enumeration with 10 parallel jobs, utilizes a custom resolvers file (if provided), and saves the results in the subdomains.txt file. External subdomains will be included in the enumeration.
+## Contact 
+[![Facebook](facebook-icon.png)](https://www.facebook.com/mafiab0yy)
+[![Twitter](twitter-icon.png)](https://twitter.com/mafiab0yy)
+ 
+
