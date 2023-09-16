@@ -12,10 +12,29 @@ This script performs subdomain enumeration using various tools such as `findomai
 - Detailed progress tracking and reporting.
 
 ## Installation
+### Clone the GitHub Repository
+Open your terminal or command prompt and use the git clone command to clone the GitHub repository that contains the script.
+```
+git clone https://github.com/M4fiaB0y/fas
+```
+### Navigate to the Repository Directory:
 
+Change your working directory to the cloned repository:
+```
+cd subdomain-enumeration-script
+```
+### Install Go (Golang)
+
+Ensure that you have Go (Golang) installed on your system. You can download and install it from the official Go website: https://golang.org/dl/.
 Before using the script, you need to set up the required environment, which includes installing the necessary dependencies. Run the following command to set up the environment:
 
- **Environment Setup:** Before using the script, ensure you have the required dependencies installed on your system. You can set up the environment with a single command:
+### Set Up the Environment:
+
+Run the following command to set up the required environment and install the necessary tools (findomain, amass, subfinder, rusolver):
+
+
+### Environment Setup:
+Before using the script, ensure you have the required dependencies installed on your system. You can set up the environment with a single command:
 
 ```
 go run subdomain_scanner.go -s
